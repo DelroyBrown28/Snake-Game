@@ -3,7 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
 }
 
 .display {
@@ -14,58 +14,33 @@
     opacity: 0.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p,
-span {
+body {
+    background: #6d9693;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h3 {
     padding-bottom: 0.714em !important;
     padding-top: 0.714em !important;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-weight: 400;
     color: #fff;
     font-weight: 300;
     text-align: center;
     margin: 0px;
 }
 
-
-body {
-    background: #6D9693;
-    text-align: center;
-    font-weight: 300;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-.noselect {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 canvas {
-    position: absolute;
     position: absolute;
     left: 50%;
     top: 50%;
     border: 1px solid #fff;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  
-
 }
-
-
 
 @keyframes beat {
     to {
-        -webkit-transform: scale(1.4);
         transform: scale(1.4);
     }
 }
@@ -75,22 +50,16 @@ canvas {
     height: 100%;
     display: -webkit-box;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     flex-direction: row;
     flex-wrap: wrap;
     position: absolute;
 }
 
 .artboard .display {
-    display: -webkit-box;
     display: flex;
     position: absolute;
-    /* top: 50px; */
 }
 
 .artboard .display h3 {
